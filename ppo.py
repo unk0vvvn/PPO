@@ -145,7 +145,7 @@ class PPO:
 
                 self.critic_optim.zero_grad()
                 critic_loss.backward()
-                self.actor_optim.step()
+                self.critic_optim.step()
 
 
 import gym
